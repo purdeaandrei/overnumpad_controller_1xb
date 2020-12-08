@@ -1,0 +1,22 @@
+(module shortable (layer F.Cu) (tedit 5F4BBD82)
+  (fp_text reference REF** (at 0 -1.397) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value shortable (at 0.127 -2.794) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 2 smd custom (at 0.827 0) (size 1.4 1.4) (layers F.Cu F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts
+         (xy 0 -0.7) (xy -0.7 -0.7) (xy -0.7 0.7) (xy 0 0.7)) (width 0))
+    ))
+  (pad 1 smd custom (at -0.827 0 180) (size 1.4 1.4) (layers F.Cu F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts
+         (xy 0 -0.7) (xy -0.7 -0.7) (xy -0.7 0.7) (xy 0 0.7)) (width 0))
+    ))
+)

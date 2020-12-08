@@ -1,0 +1,10 @@
+(module tooling_hole (layer F.Cu) (tedit 5F3A67C4)
+  (fp_text reference REF** (at 0 -11.5) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value tooling_hole (at 0 -12.5) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad "" np_thru_hole circle (at 0 0) (size 1.152 1.152) (drill 1.152) (layers *.Cu *.Mask)
+    (solder_mask_margin 0.148))
+)

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name tps2553dbvr)(type Legacy)(uri ${KIPRJMOD}/tps2553dbvr.lib)(options "")(descr ""))
+)
