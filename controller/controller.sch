@@ -109,18 +109,6 @@ Wire Wire Line
 Wire Wire Line
 	7925 5025 7450 5025
 $Comp
-L MCU_ST_STM32F3:STM32F303RCTx U2
-U 1 1 5FCE2F71
-P 4450 4325
-F 0 "U2" H 3875 2550 50  0000 C CNN
-F 1 "STM32F303RCT6" H 5025 2550 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 3850 2625 50  0001 R CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1811182038_STMicroelectronics-STM32F303RCT6_C65361.pdf" H 4450 4325 50  0001 C CNN
-F 4 "C65361" H 4450 4325 50  0001 C CNN "LCSC"
-	1    4450 4325
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Linear:AMS1117-3.3 U1
 U 1 1 5FCF7A0B
 P 5375 1175
@@ -619,8 +607,8 @@ Wire Wire Line
 NoConn ~ 5150 4125
 NoConn ~ 5150 4225
 NoConn ~ 5150 4025
-Text Notes 5225 4175 0    50   ~ 0
-Do not use GPIO PC13..PC15 in output mode\n(current is limited)
+Text Notes 2625 6150 0    50   ~ 0
+GPIO PC13..PC15 output mode\ncurrent is limited
 Text GLabel 5350 3825 2    50   BiDi ~ 0
 USB_DM
 Text GLabel 5350 3925 2    50   BiDi ~ 0
@@ -1183,7 +1171,6 @@ Text GLabel 3750 5425 0    50   BiDi ~ 0
 LEDDRV3
 NoConn ~ 3750 4225
 NoConn ~ 3750 4025
-NoConn ~ 3750 5725
 NoConn ~ 3750 5825
 NoConn ~ 3750 5925
 Wire Wire Line
@@ -1361,7 +1348,6 @@ NoConn ~ 3750 4525
 NoConn ~ 3750 4625
 NoConn ~ 5150 4725
 NoConn ~ 5150 4825
-NoConn ~ 5150 4925
 NoConn ~ 5150 5025
 NoConn ~ 5150 5125
 NoConn ~ 5150 5225
@@ -1397,6 +1383,64 @@ F 1 "MountingHole" H 10175 3005 50  0000 L CNN
 F 2 "controller:tooling_hole" H 10075 3050 50  0001 C CNN
 F 3 "~" H 10075 3050 50  0001 C CNN
 	1    10075 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 600024AB
+P 6100 7025
+F 0 "J3" H 6180 7017 50  0000 L CNN
+F 1 "Conn_Solenoid_Driver" H 6180 6926 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 6100 7025 50  0001 C CNN
+F 3 "~" H 6100 7025 50  0001 C CNN
+F 4 "https://www.tme.eu/ro/katalog/conectori-de-semnal_30/?s_field=1000011&s_order=desc&search=jst&visible_params=412%2C2%2C6%2C613%2C422%2C7%2C426%2C9%2C416%2C77%2C18%2C32%2C1247%2C2555%2C418%2C419%2C1322%2C516%2C5%2C82%2C743%2C424%2C425%2C11%2C45&mapped_params=412%3A1443412%3B426%3A1443403%3B" H 6100 7025 50  0001 C CNN "Notes"
+	1    6100 7025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0108
+U 1 1 6000A0FD
+P 5825 6900
+F 0 "#PWR0108" H 5825 6750 50  0001 C CNN
+F 1 "VBUS" H 5950 7025 50  0000 C CNN
+F 2 "" H 5825 6900 50  0001 C CNN
+F 3 "" H 5825 6900 50  0001 C CNN
+	1    5825 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5825 6900 5825 6925
+Wire Wire Line
+	5825 6925 5900 6925
+$Comp
+L power:GND #PWR0109
+U 1 1 6000F2BB
+P 5900 7225
+F 0 "#PWR0109" H 5900 6975 50  0001 C CNN
+F 1 "GND" V 5905 7097 50  0000 R CNN
+F 2 "" H 5900 7225 50  0001 C CNN
+F 3 "" H 5900 7225 50  0001 C CNN
+	1    5900 7225
+	0    1    1    0   
+$EndComp
+Text GLabel 5900 7125 0    50   BiDi ~ 0
+SOLENOID_ENABLE
+Text GLabel 5900 7025 0    50   BiDi ~ 0
+SOLENOID_TRIGGER
+Text GLabel 3750 5725 0    50   BiDi ~ 0
+SOLENOID_ENABLE
+Text GLabel 5150 4925 2    50   BiDi ~ 0
+SOLENOID_TRIGGER
+$Comp
+L MCU_ST_STM32F3:STM32F303RCTx U2
+U 1 1 5FCE2F71
+P 4450 4325
+F 0 "U2" H 3875 2550 50  0000 C CNN
+F 1 "STM32F303RCT6" H 5025 2550 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 3850 2625 50  0001 R CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811182038_STMicroelectronics-STM32F303RCT6_C65361.pdf" H 4450 4325 50  0001 C CNN
+F 4 "C65361" H 4450 4325 50  0001 C CNN "LCSC"
+	1    4450 4325
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
