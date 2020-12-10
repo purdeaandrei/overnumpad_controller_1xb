@@ -1121,42 +1121,41 @@ Text GLabel 5150 3125 2    50   BiDi ~ 0
 MEMBRANE20
 Text GLabel 5150 3025 2    50   BiDi ~ 0
 MEMBRANE21
-Text GLabel 3750 4725 0    50   BiDi ~ 0
+Text GLabel 3550 4200 0    50   BiDi ~ 0
 MEMBRANE22
-Text GLabel 5150 2925 2    50   BiDi ~ 0
+Text GLabel 3750 4425 0    50   BiDi ~ 0
 MEMBRANE23
-Text GLabel 5150 2825 2    50   BiDi ~ 0
+Text GLabel 3750 4525 0    50   BiDi ~ 0
 MEMBRANE24
-Text GLabel 5150 2725 2    50   BiDi ~ 0
+Text GLabel 3750 4625 0    50   BiDi ~ 0
 MEMBRANE25
-NoConn ~ 5150 3625
-Text Notes 5225 3650 0    50   ~ 0
-PA9 could be output during bootloader mode
+Text Notes 5975 3650 0    50   ~ 0
+PA9 (UART TX) could be output during bootloader mode
 $Comp
 L Device:R R8
 U 1 1 6012C331
-P 5300 3725
-F 0 "R8" V 5250 3875 50  0000 C CNN
-F 1 "62k" V 5300 3725 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 3725 50  0001 C CNN
-F 3 "~" H 5300 3725 50  0001 C CNN
-F 4 "C17783" H 5300 3725 50  0001 C CNN "LCSC"
-	1    5300 3725
+P 6500 4000
+F 0 "R8" V 6450 4150 50  0000 C CNN
+F 1 "62k" V 6500 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6430 4000 50  0001 C CNN
+F 3 "~" H 6500 4000 50  0001 C CNN
+F 4 "C17783" H 6500 4000 50  0001 C CNN "LCSC"
+	1    6500 4000
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+3.3V #PWR0105
 U 1 1 60130C5B
-P 5450 3725
-F 0 "#PWR0105" H 5450 3575 50  0001 C CNN
-F 1 "+3.3V" V 5465 3853 50  0000 L CNN
-F 2 "" H 5450 3725 50  0001 C CNN
-F 3 "" H 5450 3725 50  0001 C CNN
-	1    5450 3725
+P 6650 4000
+F 0 "#PWR0105" H 6650 3850 50  0001 C CNN
+F 1 "+3.3V" V 6665 4128 50  0000 L CNN
+F 2 "" H 6650 4000 50  0001 C CNN
+F 3 "" H 6650 4000 50  0001 C CNN
+	1    6650 4000
 	0    1    1    0   
 $EndComp
-Text Notes 5850 3825 0    50   ~ 0
-PA10 pulled high to make sure it's not\nmisinterpreted during bootloader mode.
+Text Notes 6075 3825 0    50   ~ 0
+PA10 (UART RX) pulled high to make sure it's not\nmisinterpreted during bootloader mode.
 Text GLabel 6750 5025 0    50   BiDi ~ 0
 LEDDRV1
 Text GLabel 6750 5275 0    50   BiDi ~ 0
@@ -1170,7 +1169,6 @@ LEDDRV2
 Text GLabel 3750 5425 0    50   BiDi ~ 0
 LEDDRV3
 NoConn ~ 3750 4225
-NoConn ~ 3750 4025
 NoConn ~ 3750 5825
 NoConn ~ 3750 5925
 Wire Wire Line
@@ -1343,9 +1341,6 @@ Wire Wire Line
 Connection ~ 7975 6100
 Wire Wire Line
 	7975 6100 8025 6100
-NoConn ~ 3750 4425
-NoConn ~ 3750 4525
-NoConn ~ 3750 4625
 NoConn ~ 5150 4725
 NoConn ~ 5150 4825
 NoConn ~ 5150 5025
@@ -1443,4 +1438,133 @@ F 4 "C65361" H 4450 4325 50  0001 C CNN "LCSC"
 	1    4450 4325
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3550 4200 3600 4200
+Wire Wire Line
+	3600 4200 3600 4025
+Wire Wire Line
+	3600 4025 3750 4025
+$Comp
+L Connector_Generic:Conn_01x04 J4
+U 1 1 5FDF4DBB
+P 7200 4550
+F 0 "J4" H 7118 4125 50  0000 C CNN
+F 1 "Conn_01x04" H 7118 4216 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7200 4550 50  0001 C CNN
+F 3 "~" H 7200 4550 50  0001 C CNN
+	1    7200 4550
+	-1   0    0    1   
+$EndComp
+Text GLabel 5150 3625 2    50   BiDi ~ 0
+UART_TX
+Text GLabel 7400 4550 2    50   BiDi ~ 0
+UART_TX
+Text GLabel 5150 3725 2    50   BiDi ~ 0
+UART_RX
+Text GLabel 6350 4000 0    50   BiDi ~ 0
+UART_RX
+Text GLabel 7400 4450 2    50   BiDi ~ 0
+UART_RX
+$Comp
+L power:GND #PWR030
+U 1 1 5FE1A17C
+P 7675 4700
+F 0 "#PWR030" H 7675 4450 50  0001 C CNN
+F 1 "GND" H 7675 4550 50  0000 C CNN
+F 2 "" H 7675 4700 50  0001 C CNN
+F 3 "" H 7675 4700 50  0001 C CNN
+	1    7675 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR029
+U 1 1 5FE1A75A
+P 7675 4325
+F 0 "#PWR029" H 7675 4175 50  0001 C CNN
+F 1 "+3.3V" H 7690 4498 50  0000 C CNN
+F 2 "" H 7675 4325 50  0001 C CNN
+F 3 "" H 7675 4325 50  0001 C CNN
+	1    7675 4325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7675 4350 7675 4325
+Text GLabel 5150 2725 2    50   BiDi ~ 0
+GPIO_PA0
+Text GLabel 5150 2825 2    50   BiDi ~ 0
+GPIO_PA1
+Text GLabel 5150 2925 2    50   BiDi ~ 0
+GPIO_PA2
+Text GLabel 3750 4725 0    50   BiDi ~ 0
+GPIO_PC3
+Text GLabel 10275 5450 0    50   BiDi ~ 0
+GPIO_PA0
+Text GLabel 10275 5550 0    50   BiDi ~ 0
+GPIO_PA1
+Text GLabel 10275 5750 0    50   BiDi ~ 0
+GPIO_PA2
+Text GLabel 10275 5850 0    50   BiDi ~ 0
+GPIO_PC3
+$Comp
+L power:GND #PWR032
+U 1 1 5FE70830
+P 9750 5725
+F 0 "#PWR032" H 9750 5475 50  0001 C CNN
+F 1 "GND" H 9750 5575 50  0000 C CNN
+F 2 "" H 9750 5725 50  0001 C CNN
+F 3 "" H 9750 5725 50  0001 C CNN
+	1    9750 5725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR031
+U 1 1 5FE7203C
+P 9500 5850
+F 0 "#PWR031" H 9500 5700 50  0001 C CNN
+F 1 "+3.3V" H 9515 6023 50  0000 C CNN
+F 2 "" H 9500 5850 50  0001 C CNN
+F 3 "" H 9500 5850 50  0001 C CNN
+	1    9500 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x07 J5
+U 1 1 5FEB4462
+P 10475 5650
+F 0 "J5" H 10555 5692 50  0000 L CNN
+F 1 "Conn_01x07" H 10555 5601 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 10475 5650 50  0001 C CNN
+F 3 "~" H 10475 5650 50  0001 C CNN
+	1    10475 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR033
+U 1 1 5FEC2379
+P 10175 5275
+F 0 "#PWR033" H 10175 5125 50  0001 C CNN
+F 1 "VBUS" H 10190 5448 50  0000 C CNN
+F 2 "" H 10175 5275 50  0001 C CNN
+F 3 "" H 10175 5275 50  0001 C CNN
+	1    10175 5275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10175 5275 10175 5350
+Wire Wire Line
+	10175 5350 10275 5350
+Wire Wire Line
+	9750 5725 9750 5650
+Wire Wire Line
+	9750 5650 10275 5650
+Wire Wire Line
+	9500 5950 9500 5850
+Wire Wire Line
+	9500 5950 10275 5950
+Wire Wire Line
+	7400 4350 7675 4350
+Wire Wire Line
+	7400 4650 7675 4650
+Wire Wire Line
+	7675 4650 7675 4700
 $EndSCHEMATC
