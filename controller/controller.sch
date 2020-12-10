@@ -604,8 +604,6 @@ Wire Wire Line
 	1725 3325 1725 3225
 Wire Wire Line
 	9225 1225 10050 1225
-NoConn ~ 5150 4125
-NoConn ~ 5150 4225
 NoConn ~ 5150 4025
 Text Notes 2625 6150 0    50   ~ 0
 GPIO PC13..PC15 output mode\ncurrent is limited
@@ -1168,7 +1166,6 @@ Text GLabel 3750 5525 0    50   BiDi ~ 0
 LEDDRV2
 Text GLabel 3750 5425 0    50   BiDi ~ 0
 LEDDRV3
-NoConn ~ 3750 4225
 NoConn ~ 3750 5825
 NoConn ~ 3750 5925
 Wire Wire Line
@@ -1341,8 +1338,6 @@ Wire Wire Line
 Connection ~ 7975 6100
 Wire Wire Line
 	7975 6100 8025 6100
-NoConn ~ 5150 4725
-NoConn ~ 5150 4825
 NoConn ~ 5150 5025
 NoConn ~ 5150 5125
 NoConn ~ 5150 5225
@@ -1567,4 +1562,56 @@ Wire Wire Line
 	7400 4650 7675 4650
 Wire Wire Line
 	7675 4650 7675 4700
+Text GLabel 10400 4275 0    50   BiDi ~ 0
+GPIO_PA15
+Text GLabel 10400 4375 0    50   BiDi ~ 0
+GPIO_PA14
+Text GLabel 10400 4475 0    50   BiDi ~ 0
+GPIO_PD2
+Text GLabel 10400 4675 0    50   BiDi ~ 0
+GPIO_PB3
+Text GLabel 10400 4775 0    50   BiDi ~ 0
+GPIO_PB4
+Text GLabel 5150 4225 2    50   BiDi ~ 0
+GPIO_PA15
+Text GLabel 5150 4125 2    50   BiDi ~ 0
+GPIO_PA14
+Text GLabel 3550 4300 0    50   BiDi ~ 0
+GPIO_PD2
+Text GLabel 5150 4725 2    50   BiDi ~ 0
+GPIO_PB3
+Text GLabel 5150 4825 2    50   BiDi ~ 0
+GPIO_PB4
+Wire Wire Line
+	3550 4300 3675 4300
+Wire Wire Line
+	3675 4300 3675 4225
+Wire Wire Line
+	3675 4225 3750 4225
+$Comp
+L Connector_Generic:Conn_01x06 J6
+U 1 1 5FE2D298
+P 10600 4475
+F 0 "J6" H 10680 4467 50  0000 L CNN
+F 1 "Conn_01x06" H 10680 4376 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical" H 10600 4475 50  0001 C CNN
+F 3 "~" H 10600 4475 50  0001 C CNN
+	1    10600 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE37C14
+P 9850 4625
+F 0 "#PWR?" H 9850 4375 50  0001 C CNN
+F 1 "GND" H 9850 4475 50  0000 C CNN
+F 2 "" H 9850 4625 50  0001 C CNN
+F 3 "" H 9850 4625 50  0001 C CNN
+	1    9850 4625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 4625 9850 4575
+Wire Wire Line
+	9850 4575 10400 4575
 $EndSCHEMATC
