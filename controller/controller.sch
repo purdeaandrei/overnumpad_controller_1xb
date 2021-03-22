@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L Connector_Generic:Conn_01x25 J1
 U 1 1 5FCDED98
-P 9025 3950
-F 0 "J1" H 9105 3992 50  0000 L CNN
-F 1 "Conn_01x25_Membrane" H 9105 3901 50  0000 L CNN
-F 2 "controller:membrane_connector" H 9025 3950 50  0001 C CNN
-F 3 "~" H 9025 3950 50  0001 C CNN
-	1    9025 3950
+P 9525 3800
+F 0 "J1" H 9605 3842 50  0000 L CNN
+F 1 "Conn_01x25_Membrane" H 9605 3751 50  0000 L CNN
+F 2 "controller:membrane_connector" H 9525 3800 50  0001 C CNN
+F 3 "~" H 9525 3800 50  0001 C CNN
+	1    9525 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -329,12 +329,12 @@ $EndComp
 $Comp
 L power:GND #PWR011
 U 1 1 5FD6E1EC
-P 4550 6250
-F 0 "#PWR011" H 4550 6000 50  0001 C CNN
-F 1 "GND" H 4550 6100 50  0000 C CNN
-F 2 "" H 4550 6250 50  0001 C CNN
-F 3 "" H 4550 6250 50  0001 C CNN
-	1    4550 6250
+P 4450 6150
+F 0 "#PWR011" H 4450 5900 50  0001 C CNN
+F 1 "GND" H 4450 6000 50  0000 C CNN
+F 2 "" H 4450 6150 50  0001 C CNN
+F 3 "" H 4450 6150 50  0001 C CNN
+	1    4450 6150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -382,21 +382,21 @@ F 3 "" H 800 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 6125 4650 6200
+	4550 6025 4550 6100
 Wire Wire Line
-	4650 6200 4550 6200
+	4550 6100 4450 6100
 Wire Wire Line
-	4350 6200 4350 6125
+	4250 6100 4250 6025
 Wire Wire Line
-	4550 6250 4550 6200
-Connection ~ 4550 6200
+	4450 6150 4450 6100
+Connection ~ 4450 6100
 Wire Wire Line
-	4550 6200 4450 6200
+	4450 6100 4350 6100
 Wire Wire Line
-	4550 6125 4550 6200
-Connection ~ 4450 6200
+	4450 6025 4450 6100
+Connection ~ 4350 6100
 Wire Wire Line
-	4450 6200 4350 6200
+	4350 6100 4250 6100
 Wire Wire Line
 	4750 2425 4750 2525
 $Comp
@@ -422,58 +422,56 @@ TODO BULK CAPS, maybe fuse\n
 $Comp
 L Device:R R2
 U 1 1 5FDF81CD
-P 3450 3125
-F 0 "R2" H 3520 3171 50  0000 L CNN
-F 1 "62k" H 3520 3080 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3380 3125 50  0001 C CNN
-F 3 "~" H 3450 3125 50  0001 C CNN
-F 4 "C17783" H 3450 3125 50  0001 C CNN "LCSC"
-	1    3450 3125
+P 3100 3125
+F 0 "R2" H 3170 3171 50  0000 L CNN
+F 1 "62k" H 3170 3080 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3030 3125 50  0001 C CNN
+F 3 "~" H 3100 3125 50  0001 C CNN
+F 4 "C17783" H 3100 3125 50  0001 C CNN "LCSC"
+	1    3100 3125
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 2975 3450 2925
-Wire Wire Line
-	3450 2925 3750 2925
+	3100 2975 3100 2925
 $Comp
 L power:GND #PWR016
 U 1 1 5FDFA2F7
-P 3450 3275
-F 0 "#PWR016" H 3450 3025 50  0001 C CNN
-F 1 "GND" H 3455 3102 50  0000 C CNN
-F 2 "" H 3450 3275 50  0001 C CNN
-F 3 "" H 3450 3275 50  0001 C CNN
-	1    3450 3275
+P 3100 3275
+F 0 "#PWR016" H 3100 3025 50  0001 C CNN
+F 1 "GND" H 3105 3102 50  0000 C CNN
+F 2 "" H 3100 3275 50  0001 C CNN
+F 3 "" H 3100 3275 50  0001 C CNN
+	1    3100 3275
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5FDFB4A9
-P 3250 2925
-F 0 "SW1" H 3250 3210 50  0000 C CNN
-F 1 "SW_Push" H 3250 3119 50  0000 C CNN
-F 2 "controller:TS342A2PWZ" H 3250 3125 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/2005221232_SHOU-HAN-TS342A2P-WZ_C557591.pdf" H 3250 3125 50  0001 C CNN
-F 4 "C557591" H 3250 2925 50  0001 C CNN "LCSC"
-	1    3250 2925
+P 2900 2925
+F 0 "SW1" H 2900 3210 50  0000 C CNN
+F 1 "SW_Push" H 2900 3119 50  0000 C CNN
+F 2 "controller:TS342A2PWZ" H 2900 3125 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/2005221232_SHOU-HAN-TS342A2P-WZ_C557591.pdf" H 2900 3125 50  0001 C CNN
+F 4 "C557591" H 2900 2925 50  0001 C CNN "LCSC"
+	1    2900 2925
 	1    0    0    -1  
 $EndComp
-Connection ~ 3450 2925
+Connection ~ 3100 2925
 $Comp
 L power:+3.3V #PWR015
 U 1 1 5FDFC9AC
-P 2875 2800
-F 0 "#PWR015" H 2875 2650 50  0001 C CNN
-F 1 "+3.3V" H 2890 2973 50  0000 C CNN
-F 2 "" H 2875 2800 50  0001 C CNN
-F 3 "" H 2875 2800 50  0001 C CNN
-	1    2875 2800
+P 2525 2800
+F 0 "#PWR015" H 2525 2650 50  0001 C CNN
+F 1 "+3.3V" H 2540 2973 50  0000 C CNN
+F 2 "" H 2525 2800 50  0001 C CNN
+F 3 "" H 2525 2800 50  0001 C CNN
+	1    2525 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2875 2800 2875 2925
+	2525 2800 2525 2925
 Wire Wire Line
-	2875 2925 3050 2925
+	2525 2925 2700 2925
 Wire Wire Line
 	4350 2450 4450 2450
 Wire Wire Line
@@ -605,8 +603,6 @@ Wire Wire Line
 Wire Wire Line
 	9225 1225 10050 1225
 NoConn ~ 5150 4025
-Text Notes 2625 6150 0    50   ~ 0
-GPIO PC13..PC15 output mode\ncurrent is limited
 Text GLabel 5350 3825 2    50   BiDi ~ 0
 USB_DM
 Text GLabel 5350 3925 2    50   BiDi ~ 0
@@ -615,37 +611,6 @@ Wire Wire Line
 	5350 3925 5150 3925
 Wire Wire Line
 	5150 3825 5350 3825
-Text Notes 1000 3900 0    50   ~ 0
-Bootloader document says,\nclock must be one of:\n24,18,16,12,9,8,6,4,3 MHz\n
-$Comp
-L power:+3.3V #PWR018
-U 1 1 5FE6BB95
-P 1125 4675
-F 0 "#PWR018" H 1125 4525 50  0001 C CNN
-F 1 "+3.3V" H 1140 4848 50  0000 C CNN
-F 2 "" H 1125 4675 50  0001 C CNN
-F 3 "" H 1125 4675 50  0001 C CNN
-	1    1125 4675
-	1    0    0    -1  
-$EndComp
-Text GLabel 1200 5075 2    50   BiDi ~ 0
-USB_DP
-$Comp
-L Device:R R6
-U 1 1 5FE6DBB1
-P 1125 4825
-F 0 "R6" H 1195 4871 50  0000 L CNN
-F 1 "1.5k" H 1195 4780 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1055 4825 50  0001 C CNN
-F 3 "~" H 1125 4825 50  0001 C CNN
-F 4 "C4310" H 1125 4825 50  0001 C CNN "LCSC"
-	1    1125 4825
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1125 4975 1125 5075
-Wire Wire Line
-	1125 5075 1200 5075
 $Comp
 L Device:Crystal_GND24 Y1
 U 1 1 5FE77F98
@@ -950,12 +915,12 @@ USB_DP
 $Comp
 L power:GND #PWR0101
 U 1 1 5FFC4940
-P 4275 7075
-F 0 "#PWR0101" H 4275 6825 50  0001 C CNN
-F 1 "GND" V 4280 6947 50  0000 R CNN
-F 2 "" H 4275 7075 50  0001 C CNN
-F 3 "" H 4275 7075 50  0001 C CNN
-	1    4275 7075
+P 3900 7125
+F 0 "#PWR0101" H 3900 6875 50  0001 C CNN
+F 1 "GND" V 3905 6997 50  0000 R CNN
+F 2 "" H 3900 7125 50  0001 C CNN
+F 3 "" H 3900 7125 50  0001 C CNN
+	1    3900 7125
 	0    1    1    0   
 $EndComp
 $Comp
@@ -995,17 +960,17 @@ $EndComp
 $Comp
 L power:VBUS #PWR0104
 U 1 1 5FFD4FE2
-P 4200 6825
-F 0 "#PWR0104" H 4200 6675 50  0001 C CNN
-F 1 "VBUS" H 4325 6950 50  0000 C CNN
-F 2 "" H 4200 6825 50  0001 C CNN
-F 3 "" H 4200 6825 50  0001 C CNN
-	1    4200 6825
+P 3825 6875
+F 0 "#PWR0104" H 3825 6725 50  0001 C CNN
+F 1 "VBUS" H 3950 7000 50  0000 C CNN
+F 2 "" H 3825 6875 50  0001 C CNN
+F 3 "" H 3825 6875 50  0001 C CNN
+	1    3825 6875
 	1    0    0    -1  
 $EndComp
-Text GLabel 4275 7175 0    50   BiDi ~ 0
+Text GLabel 3900 7225 0    50   BiDi ~ 0
 USB_DM_ESD
-Text GLabel 4275 6975 0    50   BiDi ~ 0
+Text GLabel 3900 7025 0    50   BiDi ~ 0
 USB_DP_ESD
 Text GLabel 2575 7100 2    50   BiDi ~ 0
 USB_DP_ESD
@@ -1014,112 +979,112 @@ USB_DM_ESD
 $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 6000DE7C
-P 4475 6975
-F 0 "J2" H 4555 6967 50  0000 L CNN
-F 1 "Conn_01x04" H 4555 6876 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 4475 6975 50  0001 C CNN
-F 3 "~" H 4475 6975 50  0001 C CNN
-F 4 "https://www.tme.eu/ro/katalog/conectori-de-semnal_30/?s_field=1000011&s_order=desc&search=jst&visible_params=412%2C2%2C6%2C613%2C422%2C7%2C426%2C9%2C416%2C77%2C18%2C32%2C1247%2C2555%2C418%2C419%2C1322%2C516%2C5%2C82%2C743%2C424%2C425%2C11%2C45&mapped_params=412%3A1443412%3B426%3A1443403%3B" H 4475 6975 50  0001 C CNN "Notes"
-	1    4475 6975
+P 4100 7025
+F 0 "J2" H 4180 7017 50  0000 L CNN
+F 1 "Conn_01x04" H 4180 6926 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 4100 7025 50  0001 C CNN
+F 3 "~" H 4100 7025 50  0001 C CNN
+F 4 "https://www.tme.eu/ro/katalog/conectori-de-semnal_30/?s_field=1000011&s_order=desc&search=jst&visible_params=412%2C2%2C6%2C613%2C422%2C7%2C426%2C9%2C416%2C77%2C18%2C32%2C1247%2C2555%2C418%2C419%2C1322%2C516%2C5%2C82%2C743%2C424%2C425%2C11%2C45&mapped_params=412%3A1443412%3B426%3A1443403%3B" H 4100 7025 50  0001 C CNN "Notes"
+	1    4100 7025
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 6825 4200 6875
+	3825 6875 3825 6925
 Wire Wire Line
-	4200 6875 4275 6875
-Text GLabel 8825 2750 0    50   BiDi ~ 0
-MEMBRANE1
-Text GLabel 8825 2850 0    50   BiDi ~ 0
+	3825 6925 3900 6925
+Text GLabel 9325 2600 0    50   BiDi ~ 0
+MEMBRANE1_PA10
+Text GLabel 9325 2700 0    50   BiDi ~ 0
 MEMBRANE2
-Text GLabel 8825 2950 0    50   BiDi ~ 0
+Text GLabel 9325 2800 0    50   BiDi ~ 0
 MEMBRANE3
-Text GLabel 8825 3050 0    50   BiDi ~ 0
-MEMBRANE4
-Text GLabel 8825 3150 0    50   BiDi ~ 0
+Text GLabel 9325 2900 0    50   BiDi ~ 0
+MEMBRANE4_PC9
+Text GLabel 9325 3000 0    50   BiDi ~ 0
 MEMBRANE5
-Text GLabel 8825 3250 0    50   BiDi ~ 0
-MEMBRANE6
-Text GLabel 8825 3350 0    50   BiDi ~ 0
+Text GLabel 9325 3100 0    50   BiDi ~ 0
+MEMBRANE6_PC7
+Text GLabel 9325 3200 0    50   BiDi ~ 0
 MEMBRANE7
-Text GLabel 8825 3450 0    50   BiDi ~ 0
+Text GLabel 9325 3300 0    50   BiDi ~ 0
 MEMBRANE8
-Text GLabel 8825 3550 0    50   BiDi ~ 0
+Text GLabel 9325 3400 0    50   BiDi ~ 0
 MEMBRANE9
-Text GLabel 8825 3650 0    50   BiDi ~ 0
+Text GLabel 9325 3500 0    50   BiDi ~ 0
 MEMBRANE10
-Text GLabel 8825 3750 0    50   BiDi ~ 0
+Text GLabel 9325 3600 0    50   BiDi ~ 0
 MEMBRANE11
-Text GLabel 8825 3850 0    50   BiDi ~ 0
+Text GLabel 9325 3700 0    50   BiDi ~ 0
 MEMBRANE12
-Text GLabel 8825 3950 0    50   BiDi ~ 0
+Text GLabel 9325 3800 0    50   BiDi ~ 0
 MEMBRANE13
-Text GLabel 8825 4050 0    50   BiDi ~ 0
+Text GLabel 9325 3900 0    50   BiDi ~ 0
 MEMBRANE14
-Text GLabel 8825 4150 0    50   BiDi ~ 0
+Text GLabel 9325 4000 0    50   BiDi ~ 0
 MEMBRANE15
-Text GLabel 8825 4250 0    50   BiDi ~ 0
+Text GLabel 9325 4100 0    50   BiDi ~ 0
 MEMBRANE16
-Text GLabel 8825 4350 0    50   BiDi ~ 0
+Text GLabel 9325 4200 0    50   BiDi ~ 0
 MEMBRANE17
-Text GLabel 8825 4450 0    50   BiDi ~ 0
+Text GLabel 9325 4300 0    50   BiDi ~ 0
 MEMBRANE18
-Text GLabel 8825 4550 0    50   BiDi ~ 0
-MEMBRANE19
-Text GLabel 8825 4650 0    50   BiDi ~ 0
+Text GLabel 9325 4400 0    50   BiDi ~ 0
+MEMBRANE19_PA5
+Text GLabel 9325 4500 0    50   BiDi ~ 0
 MEMBRANE20
-Text GLabel 8825 4750 0    50   BiDi ~ 0
+Text GLabel 9325 4600 0    50   BiDi ~ 0
 MEMBRANE21
-Text GLabel 8825 4850 0    50   BiDi ~ 0
+Text GLabel 9325 4700 0    50   BiDi ~ 0
 MEMBRANE22
-Text GLabel 8825 4950 0    50   BiDi ~ 0
+Text GLabel 9325 4800 0    50   BiDi ~ 0
 MEMBRANE23
-Text GLabel 8825 5050 0    50   BiDi ~ 0
+Text GLabel 9325 4900 0    50   BiDi ~ 0
 MEMBRANE24
-Text GLabel 8825 5150 0    50   BiDi ~ 0
+Text GLabel 9325 5000 0    50   BiDi ~ 0
 MEMBRANE25
-Text GLabel 5150 3525 2    50   BiDi ~ 0
-MEMBRANE1
-Text GLabel 3750 5325 0    50   BiDi ~ 0
+Text GLabel 5150 3725 2    50   BiDi ~ 0
+MEMBRANE1_PA10
+Text GLabel 5150 3625 2    50   BiDi ~ 0
 MEMBRANE2
-Text GLabel 3750 5225 0    50   BiDi ~ 0
+Text GLabel 5150 3525 2    50   BiDi ~ 0
 MEMBRANE3
+Text GLabel 3750 5225 0    50   BiDi ~ 0
+MEMBRANE4_PC9
 Text GLabel 3750 5125 0    50   BiDi ~ 0
-MEMBRANE4
-Text GLabel 3750 5025 0    50   BiDi ~ 0
 MEMBRANE5
-Text GLabel 5150 5925 2    50   BiDi ~ 0
-MEMBRANE6
-Text GLabel 5150 5825 2    50   BiDi ~ 0
+Text GLabel 3750 5025 0    50   BiDi ~ 0
+MEMBRANE6_PC7
+Text GLabel 3750 4925 0    50   BiDi ~ 0
 MEMBRANE7
-Text GLabel 5150 5725 2    50   BiDi ~ 0
+Text GLabel 5150 5825 2    50   BiDi ~ 0
 MEMBRANE8
-Text GLabel 5150 5625 2    50   BiDi ~ 0
+Text GLabel 5150 5725 2    50   BiDi ~ 0
 MEMBRANE9
-Text GLabel 5150 5525 2    50   BiDi ~ 0
+Text GLabel 5150 5625 2    50   BiDi ~ 0
 MEMBRANE10
-Text GLabel 5150 5425 2    50   BiDi ~ 0
+Text GLabel 5150 5525 2    50   BiDi ~ 0
 MEMBRANE11
-Text GLabel 5150 4625 2    50   BiDi ~ 0
+Text GLabel 5150 5425 2    50   BiDi ~ 0
 MEMBRANE12
 Text GLabel 5150 4525 2    50   BiDi ~ 0
 MEMBRANE13
 Text GLabel 5150 4425 2    50   BiDi ~ 0
 MEMBRANE14
-Text GLabel 3750 4925 0    50   BiDi ~ 0
-MEMBRANE15
 Text GLabel 3750 4825 0    50   BiDi ~ 0
+MEMBRANE15
+Text GLabel 3750 4725 0    50   BiDi ~ 0
 MEMBRANE16
 Text GLabel 5150 3425 2    50   BiDi ~ 0
 MEMBRANE17
 Text GLabel 5150 3325 2    50   BiDi ~ 0
 MEMBRANE18
 Text GLabel 5150 3225 2    50   BiDi ~ 0
-MEMBRANE19
+MEMBRANE19_PA5
 Text GLabel 5150 3125 2    50   BiDi ~ 0
 MEMBRANE20
 Text GLabel 5150 3025 2    50   BiDi ~ 0
 MEMBRANE21
-Text GLabel 3550 4200 0    50   BiDi ~ 0
+Text GLabel 3750 4325 0    50   BiDi ~ 0
 MEMBRANE22
 Text GLabel 3750 4425 0    50   BiDi ~ 0
 MEMBRANE23
@@ -1127,47 +1092,43 @@ Text GLabel 3750 4525 0    50   BiDi ~ 0
 MEMBRANE24
 Text GLabel 3750 4625 0    50   BiDi ~ 0
 MEMBRANE25
-Text Notes 5975 3650 0    50   ~ 0
-PA9 (UART TX) could be output during bootloader mode
 $Comp
 L Device:R R8
 U 1 1 6012C331
-P 6500 4000
-F 0 "R8" V 6450 4150 50  0000 C CNN
-F 1 "62k" V 6500 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6430 4000 50  0001 C CNN
-F 3 "~" H 6500 4000 50  0001 C CNN
-F 4 "C17783" H 6500 4000 50  0001 C CNN "LCSC"
-	1    6500 4000
+P 2050 5450
+F 0 "R8" V 2000 5600 50  0000 C CNN
+F 1 "62k" V 2050 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1980 5450 50  0001 C CNN
+F 3 "~" H 2050 5450 50  0001 C CNN
+F 4 "C17783" H 2050 5450 50  0001 C CNN "LCSC"
+	1    2050 5450
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+3.3V #PWR0105
 U 1 1 60130C5B
-P 6650 4000
-F 0 "#PWR0105" H 6650 3850 50  0001 C CNN
-F 1 "+3.3V" V 6665 4128 50  0000 L CNN
-F 2 "" H 6650 4000 50  0001 C CNN
-F 3 "" H 6650 4000 50  0001 C CNN
-	1    6650 4000
+P 2200 5450
+F 0 "#PWR0105" H 2200 5300 50  0001 C CNN
+F 1 "+3.3V" V 2215 5578 50  0000 L CNN
+F 2 "" H 2200 5450 50  0001 C CNN
+F 3 "" H 2200 5450 50  0001 C CNN
+	1    2200 5450
 	0    1    1    0   
 $EndComp
-Text Notes 6075 3825 0    50   ~ 0
-PA10 (UART RX) pulled high to make sure it's not\nmisinterpreted during bootloader mode.
 Text GLabel 6750 5025 0    50   BiDi ~ 0
 LEDDRV1
 Text GLabel 6750 5275 0    50   BiDi ~ 0
-LEDDRV2
+LEDDRV2_USART3RX_BL
 Text GLabel 6750 5525 0    50   BiDi ~ 0
 LEDDRV3
-Text GLabel 3750 5625 0    50   BiDi ~ 0
-LEDDRV1
 Text GLabel 3750 5525 0    50   BiDi ~ 0
-LEDDRV2
+LEDDRV1
 Text GLabel 3750 5425 0    50   BiDi ~ 0
+LEDDRV2_USART3RX_BL
+Text GLabel 3750 5325 0    50   BiDi ~ 0
 LEDDRV3
+NoConn ~ 3750 5725
 NoConn ~ 3750 5825
-NoConn ~ 3750 5925
 Wire Wire Line
 	3325 1175 3925 1175
 Connection ~ 3925 1175
@@ -1196,23 +1157,23 @@ F 3 "" H 3925 1475 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4450 6125 4450 6200
+	4350 6025 4350 6100
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 601C14E4
-P 4050 6825
-F 0 "#FLG0101" H 4050 6900 50  0001 C CNN
-F 1 "PWR_FLAG" H 3850 6950 50  0000 C CNN
-F 2 "" H 4050 6825 50  0001 C CNN
-F 3 "~" H 4050 6825 50  0001 C CNN
-	1    4050 6825
+P 3675 6875
+F 0 "#FLG0101" H 3675 6950 50  0001 C CNN
+F 1 "PWR_FLAG" H 3475 7000 50  0000 C CNN
+F 2 "" H 3675 6875 50  0001 C CNN
+F 3 "~" H 3675 6875 50  0001 C CNN
+	1    3675 6875
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 6875 4050 6875
-Connection ~ 4200 6875
+	3825 6925 3675 6925
+Connection ~ 3825 6925
 Wire Wire Line
-	4050 6825 4050 6875
+	3675 6875 3675 6925
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 601CB0BA
@@ -1338,10 +1299,8 @@ Wire Wire Line
 Connection ~ 7975 6100
 Wire Wire Line
 	7975 6100 8025 6100
-NoConn ~ 5150 5025
 NoConn ~ 5150 5125
 NoConn ~ 5150 5225
-NoConn ~ 5150 5325
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5FFEB7BE
@@ -1378,128 +1337,61 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J3
 U 1 1 600024AB
-P 6100 7025
-F 0 "J3" H 6180 7017 50  0000 L CNN
-F 1 "Conn_Solenoid_Driver" H 6180 6926 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 6100 7025 50  0001 C CNN
-F 3 "~" H 6100 7025 50  0001 C CNN
-F 4 "https://www.tme.eu/ro/katalog/conectori-de-semnal_30/?s_field=1000011&s_order=desc&search=jst&visible_params=412%2C2%2C6%2C613%2C422%2C7%2C426%2C9%2C416%2C77%2C18%2C32%2C1247%2C2555%2C418%2C419%2C1322%2C516%2C5%2C82%2C743%2C424%2C425%2C11%2C45&mapped_params=412%3A1443412%3B426%3A1443403%3B" H 6100 7025 50  0001 C CNN "Notes"
-	1    6100 7025
+P 5925 6925
+F 0 "J3" H 6005 6917 50  0000 L CNN
+F 1 "Conn_Solenoid_Driver" H 6005 6826 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 5925 6925 50  0001 C CNN
+F 3 "~" H 5925 6925 50  0001 C CNN
+F 4 "https://www.tme.eu/ro/katalog/conectori-de-semnal_30/?s_field=1000011&s_order=desc&search=jst&visible_params=412%2C2%2C6%2C613%2C422%2C7%2C426%2C9%2C416%2C77%2C18%2C32%2C1247%2C2555%2C418%2C419%2C1322%2C516%2C5%2C82%2C743%2C424%2C425%2C11%2C45&mapped_params=412%3A1443412%3B426%3A1443403%3B" H 5925 6925 50  0001 C CNN "Notes"
+	1    5925 6925
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VBUS #PWR0108
 U 1 1 6000A0FD
-P 5825 6900
-F 0 "#PWR0108" H 5825 6750 50  0001 C CNN
-F 1 "VBUS" H 5950 7025 50  0000 C CNN
-F 2 "" H 5825 6900 50  0001 C CNN
-F 3 "" H 5825 6900 50  0001 C CNN
-	1    5825 6900
+P 5650 6800
+F 0 "#PWR0108" H 5650 6650 50  0001 C CNN
+F 1 "VBUS" H 5775 6925 50  0000 C CNN
+F 2 "" H 5650 6800 50  0001 C CNN
+F 3 "" H 5650 6800 50  0001 C CNN
+	1    5650 6800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5825 6900 5825 6925
+	5650 6800 5650 6825
 Wire Wire Line
-	5825 6925 5900 6925
+	5650 6825 5725 6825
 $Comp
 L power:GND #PWR0109
 U 1 1 6000F2BB
-P 5900 7225
-F 0 "#PWR0109" H 5900 6975 50  0001 C CNN
-F 1 "GND" V 5905 7097 50  0000 R CNN
-F 2 "" H 5900 7225 50  0001 C CNN
-F 3 "" H 5900 7225 50  0001 C CNN
-	1    5900 7225
+P 5725 7125
+F 0 "#PWR0109" H 5725 6875 50  0001 C CNN
+F 1 "GND" V 5730 6997 50  0000 R CNN
+F 2 "" H 5725 7125 50  0001 C CNN
+F 3 "" H 5725 7125 50  0001 C CNN
+	1    5725 7125
 	0    1    1    0   
 $EndComp
-Text GLabel 5900 7125 0    50   BiDi ~ 0
+Text GLabel 5725 7025 0    50   BiDi ~ 0
 SOLENOID_ENABLE
-Text GLabel 5900 7025 0    50   BiDi ~ 0
-SOLENOID_TRIGGER
-Text GLabel 3750 5725 0    50   BiDi ~ 0
+Text GLabel 5725 6925 0    50   BiDi ~ 0
+SOLENOID_TRIGGER_CAN_RX_BL
+Text GLabel 3750 5625 0    50   BiDi ~ 0
 SOLENOID_ENABLE
 Text GLabel 5150 4925 2    50   BiDi ~ 0
-SOLENOID_TRIGGER
-$Comp
-L MCU_ST_STM32F3:STM32F303RCTx U2
-U 1 1 5FCE2F71
-P 4450 4325
-F 0 "U2" H 3875 2550 50  0000 C CNN
-F 1 "STM32F303RCT6" H 5025 2550 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 3850 2625 50  0001 R CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1811182038_STMicroelectronics-STM32F303RCT6_C65361.pdf" H 4450 4325 50  0001 C CNN
-F 4 "C65361" H 4450 4325 50  0001 C CNN "LCSC"
-	1    4450 4325
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 4200 3600 4200
-Wire Wire Line
-	3600 4200 3600 4025
-Wire Wire Line
-	3600 4025 3750 4025
-$Comp
-L Connector_Generic:Conn_01x04 J4
-U 1 1 5FDF4DBB
-P 7200 4550
-F 0 "J4" H 7118 4125 50  0000 C CNN
-F 1 "Conn_01x04" H 7118 4216 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7200 4550 50  0001 C CNN
-F 3 "~" H 7200 4550 50  0001 C CNN
-	1    7200 4550
-	-1   0    0    1   
-$EndComp
-Text GLabel 5150 3625 2    50   BiDi ~ 0
-UART_TX
-Text GLabel 7400 4550 2    50   BiDi ~ 0
-UART_TX
-Text GLabel 5150 3725 2    50   BiDi ~ 0
-UART_RX
-Text GLabel 6350 4000 0    50   BiDi ~ 0
-UART_RX
-Text GLabel 7400 4450 2    50   BiDi ~ 0
-UART_RX
-$Comp
-L power:GND #PWR030
-U 1 1 5FE1A17C
-P 7675 4700
-F 0 "#PWR030" H 7675 4450 50  0001 C CNN
-F 1 "GND" H 7675 4550 50  0000 C CNN
-F 2 "" H 7675 4700 50  0001 C CNN
-F 3 "" H 7675 4700 50  0001 C CNN
-	1    7675 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR029
-U 1 1 5FE1A75A
-P 7675 4325
-F 0 "#PWR029" H 7675 4175 50  0001 C CNN
-F 1 "+3.3V" H 7690 4498 50  0000 C CNN
-F 2 "" H 7675 4325 50  0001 C CNN
-F 3 "" H 7675 4325 50  0001 C CNN
-	1    7675 4325
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7675 4350 7675 4325
+SOLENOID_TRIGGER_CAN_RX_BL
 Text GLabel 5150 2725 2    50   BiDi ~ 0
 GPIO_PA0
 Text GLabel 5150 2825 2    50   BiDi ~ 0
 GPIO_PA1
 Text GLabel 5150 2925 2    50   BiDi ~ 0
 GPIO_PA2
-Text GLabel 3750 4725 0    50   BiDi ~ 0
-GPIO_PC3
 Text GLabel 10275 5450 0    50   BiDi ~ 0
 GPIO_PA0
 Text GLabel 10275 5550 0    50   BiDi ~ 0
 GPIO_PA1
 Text GLabel 10275 5750 0    50   BiDi ~ 0
 GPIO_PA2
-Text GLabel 10275 5850 0    50   BiDi ~ 0
-GPIO_PC3
 $Comp
 L power:GND #PWR032
 U 1 1 5FE70830
@@ -1556,12 +1448,6 @@ Wire Wire Line
 	9500 5950 9500 5850
 Wire Wire Line
 	9500 5950 10275 5950
-Wire Wire Line
-	7400 4350 7675 4350
-Wire Wire Line
-	7400 4650 7675 4650
-Wire Wire Line
-	7675 4650 7675 4700
 Text GLabel 10400 4275 0    50   BiDi ~ 0
 GPIO_PA15
 Text GLabel 10400 4375 0    50   BiDi ~ 0
@@ -1576,18 +1462,16 @@ Text GLabel 5150 4225 2    50   BiDi ~ 0
 GPIO_PA15
 Text GLabel 5150 4125 2    50   BiDi ~ 0
 GPIO_PA14
-Text GLabel 3550 4300 0    50   BiDi ~ 0
+Text GLabel 3525 4200 0    50   BiDi ~ 0
 GPIO_PD2
 Text GLabel 5150 4725 2    50   BiDi ~ 0
 GPIO_PB3
 Text GLabel 5150 4825 2    50   BiDi ~ 0
 GPIO_PB4
 Wire Wire Line
-	3550 4300 3675 4300
+	3525 4200 3650 4200
 Wire Wire Line
-	3675 4300 3675 4225
-Wire Wire Line
-	3675 4225 3750 4225
+	3650 4200 3650 4125
 $Comp
 L Connector_Generic:Conn_01x06 J6
 U 1 1 5FE2D298
@@ -1600,10 +1484,10 @@ F 3 "~" H 10600 4475 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0110
 U 1 1 5FE37C14
 P 9850 4625
-F 0 "#PWR?" H 9850 4375 50  0001 C CNN
+F 0 "#PWR0110" H 9850 4375 50  0001 C CNN
 F 1 "GND" H 9850 4475 50  0000 C CNN
 F 2 "" H 9850 4625 50  0001 C CNN
 F 3 "" H 9850 4625 50  0001 C CNN
@@ -1614,4 +1498,226 @@ Wire Wire Line
 	9850 4625 9850 4575
 Wire Wire Line
 	9850 4575 10400 4575
+$Comp
+L MCU_ST_STM32F4:STM32F446RETx U2
+U 1 1 605C70AD
+P 4450 4225
+F 0 "U2" H 3900 2475 50  0000 C CNN
+F 1 "STM32F446RETx" H 5050 2475 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 3850 2525 50  0001 R CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/STMicroelectronics-STM32F446RET6_C69336.pdf" H 4450 4225 50  0001 C CNN
+F 4 "C69336" H 4450 4225 50  0001 C CNN "LCSC"
+	1    4450 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 6100 4650 6100
+Wire Wire Line
+	4650 6100 4650 6025
+Connection ~ 4550 6100
+Wire Wire Line
+	3650 4125 3750 4125
+$Comp
+L Device:C C18
+U 1 1 6089AFC8
+P 3450 3275
+F 0 "C18" H 3775 3250 50  0000 R CNN
+F 1 "4.7uF" H 3825 3325 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3488 3125 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21A475KAQNNNE_C1779.pdf" H 3450 3275 50  0001 C CNN
+F 4 "C1779" H 3450 3275 50  0001 C CNN "LCSC"
+	1    3450 3275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2925 3750 2925
+Wire Wire Line
+	3450 3125 3750 3125
+$Comp
+L power:GND #PWR0111
+U 1 1 608DCB5C
+P 3450 3425
+F 0 "#PWR0111" H 3450 3175 50  0001 C CNN
+F 1 "GND" H 3625 3350 50  0000 C CNN
+F 2 "" H 3450 3425 50  0001 C CNN
+F 3 "" H 3450 3425 50  0001 C CNN
+	1    3450 3425
+	1    0    0    -1  
+$EndComp
+Text Notes 6000 4800 0    50   ~ 0
+Notes on various special GPIOs of this chip:\n\n* The following can be output during bootloader mode,\n   make sure nothing is driving into them during programming:\n   * PA9 (USART1 TX), PB10 (maybe USART3 TX), PC10\n     (USART3 TX), PB13 (CAN2_TX), PB14 (SPI2_MISO), PA6 (SPI1_MISO)\n\n* The following pins need to be stable and unchanging during\n   programming in order to guarantee that DFU mode activates:\n   * PA10 (USART1 RX)   (decided to pull high)\n   * PC11 (USART3 RX)   (decided to pull low)\n   * PB5 (CAN2 RX)   (decided to pull low)\n   * PB9,PB6 (I2C1 SDA,SCL) (decided to force low)\n   * PC9 (I2C3 SDA) (decided to pull high)\n   * PA5 (SPI1_SCK) (decided to pull high)\n   * PC7 (SPI2_SCK) (decided to pull high)\n\n* On this chip the following GPIOs are not 5V-tolerant:\n   * PA4, PA5, and any GPIOs with pull-up/downs enabled\n\n* On this chip the following GPIOs have stronger pull-up/downs:\n   * PA10, PB10   (normal max: 50k PA10/PB10 max: 14k)\n\n* On this chip the following GPIOs are current-limited:\n   * PC13, PC14, PC15 output mode current is limited to +-3mA\n\n* On this chip, according to AN2606, an external pull-up\n   resistor on the USB_DP pin is NOT required\n\n* On this chip, according to AN2606, the bootloader uses Pattern 1,\n   which also requires the BP2 BOOT1 pin to be low.\n\nOther Notes:\n\n* For this chip AN2606 Bootloader document says, clock must\n   be a multiple of 1MHz, between 4 and 26MHz\n
+Text GLabel 1900 5600 0    50   BiDi ~ 0
+LEDDRV2_USART3RX_BL
+$Comp
+L Device:R R6
+U 1 1 6096F1F3
+P 2050 5600
+F 0 "R6" V 2000 5750 50  0000 C CNN
+F 1 "62k" V 2050 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1980 5600 50  0001 C CNN
+F 3 "~" H 2050 5600 50  0001 C CNN
+F 4 "C17783" H 2050 5600 50  0001 C CNN "LCSC"
+	1    2050 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 60971C7F
+P 2200 5600
+F 0 "#PWR018" H 2200 5350 50  0001 C CNN
+F 1 "GND" V 2200 5400 50  0000 C CNN
+F 2 "" H 2200 5600 50  0001 C CNN
+F 3 "" H 2200 5600 50  0001 C CNN
+	1    2200 5600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1900 5750 0    50   BiDi ~ 0
+SOLENOID_TRIGGER_CAN_RX_BL
+$Comp
+L Device:R R9
+U 1 1 609969E2
+P 2050 5750
+F 0 "R9" V 2000 5900 50  0000 C CNN
+F 1 "62k" V 2050 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1980 5750 50  0001 C CNN
+F 3 "~" H 2050 5750 50  0001 C CNN
+F 4 "C17783" H 2050 5750 50  0001 C CNN "LCSC"
+	1    2050 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 609971F2
+P 2200 5750
+F 0 "#PWR0112" H 2200 5500 50  0001 C CNN
+F 1 "GND" V 2200 5550 50  0000 C CNN
+F 2 "" H 2200 5750 50  0001 C CNN
+F 3 "" H 2200 5750 50  0001 C CNN
+	1    2200 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 609BF9D5
+P 5150 5325
+F 0 "#PWR0113" H 5150 5075 50  0001 C CNN
+F 1 "GND" V 5125 5100 50  0000 C CNN
+F 2 "" H 5150 5325 50  0001 C CNN
+F 3 "" H 5150 5325 50  0001 C CNN
+	1    5150 5325
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 609C11C1
+P 5150 5025
+F 0 "#PWR0114" H 5150 4775 50  0001 C CNN
+F 1 "GND" V 5125 4800 50  0000 C CNN
+F 2 "" H 5150 5025 50  0001 C CNN
+F 3 "" H 5150 5025 50  0001 C CNN
+	1    5150 5025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 60B9BCC3
+P 5600 4625
+F 0 "#PWR0115" H 5600 4375 50  0001 C CNN
+F 1 "GND" V 5600 4400 50  0000 C CNN
+F 2 "" H 5600 4625 50  0001 C CNN
+F 3 "" H 5600 4625 50  0001 C CNN
+	1    5600 4625
+	0    -1   -1   0   
+$EndComp
+Text Label 2125 2425 0    50   ~ 0
+NRST
+Text Label 3300 2925 0    50   ~ 0
+BOOT0
+Text Label 3500 3925 0    50   ~ 0
+OSCO
+Text Label 2625 3550 0    50   ~ 0
+OSCI
+Text Label 2650 4000 3    50   ~ 0
+OSCO_RES
+Text Notes 4625 4650 0    50   ~ 0
+BOOT1
+Text GLabel 1900 5450 0    50   BiDi ~ 0
+MEMBRANE1_PA10
+Text GLabel 1900 5000 0    50   BiDi ~ 0
+MEMBRANE4_PC9
+$Comp
+L Device:R R10
+U 1 1 60CF13E3
+P 2050 5000
+F 0 "R10" V 2000 5150 50  0000 C CNN
+F 1 "62k" V 2050 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1980 5000 50  0001 C CNN
+F 3 "~" H 2050 5000 50  0001 C CNN
+F 4 "C17783" H 2050 5000 50  0001 C CNN "LCSC"
+	1    2050 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0116
+U 1 1 60CF40DB
+P 2200 5000
+F 0 "#PWR0116" H 2200 4850 50  0001 C CNN
+F 1 "+3.3V" V 2215 5128 50  0000 L CNN
+F 2 "" H 2200 5000 50  0001 C CNN
+F 3 "" H 2200 5000 50  0001 C CNN
+	1    2200 5000
+	0    1    1    0   
+$EndComp
+Text GLabel 1900 5150 0    50   BiDi ~ 0
+MEMBRANE19_PA5
+Text GLabel 1900 5300 0    50   BiDi ~ 0
+MEMBRANE6_PC7
+$Comp
+L Device:R R11
+U 1 1 60D03E18
+P 2050 5150
+F 0 "R11" V 2000 5300 50  0000 C CNN
+F 1 "62k" V 2050 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1980 5150 50  0001 C CNN
+F 3 "~" H 2050 5150 50  0001 C CNN
+F 4 "C17783" H 2050 5150 50  0001 C CNN "LCSC"
+	1    2050 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 60D0429F
+P 2050 5300
+F 0 "R12" V 2000 5450 50  0000 C CNN
+F 1 "62k" V 2050 5300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1980 5300 50  0001 C CNN
+F 3 "~" H 2050 5300 50  0001 C CNN
+F 4 "C17783" H 2050 5300 50  0001 C CNN "LCSC"
+	1    2050 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0117
+U 1 1 60D04619
+P 2200 5150
+F 0 "#PWR0117" H 2200 5000 50  0001 C CNN
+F 1 "+3.3V" V 2215 5278 50  0000 L CNN
+F 2 "" H 2200 5150 50  0001 C CNN
+F 3 "" H 2200 5150 50  0001 C CNN
+	1    2200 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0118
+U 1 1 60D04959
+P 2200 5300
+F 0 "#PWR0118" H 2200 5150 50  0001 C CNN
+F 1 "+3.3V" V 2215 5428 50  0000 L CNN
+F 2 "" H 2200 5300 50  0001 C CNN
+F 3 "" H 2200 5300 50  0001 C CNN
+	1    2200 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 4625 5150 4625
 $EndSCHEMATC
