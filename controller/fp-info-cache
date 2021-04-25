@@ -1,4 +1,4 @@
-18290896363388619
+18295752353310619
 Aesthetics
 BREADBOARD_SPACING
 BREADBOARD SPACING
@@ -75250,6 +75250,13 @@ varistor SIOV
 2
 2
 controller
+PinHeader_1x01_P1.27mm_Vertical_mod_no_courtyard_no_ref
+Through hole straight pin header, 1x01, 1.27mm pitch, single row
+Through hole pin header THT 1x01 1.27mm single row
+0
+1
+1
+controller
 TS342A2PWZ
 
 
@@ -75270,6 +75277,20 @@ shortable
 0
 2
 2
+controller
+shortable_shorted
+
+
+0
+2
+2
+controller
+switch_K2-1187SQ-A4SW-06
+
+
+0
+4
+4
 controller
 tooling_hole
 
