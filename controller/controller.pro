@@ -1,4 +1,4 @@
-update=Tue 08 Dec 2020 06:39:29 AM EET
+update=Sun 25 Apr 2021 08:30:10 AM EEST
 version=1
 last_client=kicad
 [general]
@@ -14,7 +14,7 @@ LibDir=
 [eeschema/libraries]
 [pcbnew]
 version=1
-PageLayoutDescrFile=
+PageLayoutDescrFile=worksheet.kicad_wks
 LastNetListRead=
 CopperLayerCount=2
 BoardThickness=1.6
@@ -61,7 +61,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.05
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -240,3 +240,13 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=../
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1

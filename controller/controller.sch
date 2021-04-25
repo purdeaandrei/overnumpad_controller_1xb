@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "OverNumpad Controller"
 Date ""
 Rev ""
 Comp ""
@@ -2003,4 +2003,6 @@ Wire Wire Line
 	1175 4225 1175 3525
 NoConn ~ 1450 3725
 NoConn ~ 1650 4225
+Text Notes 7025 7075 0    43   ~ 0
+Copyright Andrei Purdea 2021.\nThis source describes Open Hardware and is licensed under the CERN-OHL-P v2\nYou may redistribute and modify this documentation and make products using it under the terms of the\nCERN-OHL-P v2 (https:/cern.ch/cern-ohl).\nThis documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the\nCERN-OHL-P v2 for applicable conditions
 $EndSCHEMATC
