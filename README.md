@@ -70,3 +70,12 @@ The connectors for the USB cable, and for the solenoid driver need to be ordered
 * Through-hole male connector: https://www.tme.eu/en/details/ds1066-4mrw6sa/raster-signal-connectors-2-00mm/connfly/
 * Female connector (for USB cable, or for ribbon cable): https://www.tme.eu/en/details/i-ds1066-scw04/raster-signal-connectors-2-00mm/connfly/
 * Crimp pins for the female connector: https://www.tme.eu/en/details/t-ds1066-sc600/raster-signal-connectors-2-00mm/connfly/
+
+## Firmware
+
+Currently QMK firmware, and VIAL-QMK firmware are available.
+
+For VIAL-QMK please see here:
+https://github.com/purdeaandrei/vial-qmk-overnumpad-and-aristides-2862/releases/latest
+
+For plain QMK please look for keyboards called `unicomp/*/overnumpad_1xb`, and `ibm/*/overnumpad_1xb` in upstream QMK.
